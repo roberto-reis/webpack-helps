@@ -1,0 +1,26 @@
+.btn {
+    color: #fff;
+    background-color: tomato;
+    padding: 15px 20px;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wallpapers1, .wallpapers2, .wallpapers3 {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wallpapers1 {
+    background-image: url('../image/archlinux-linux-wallpapers.jpg');
+}
+.wallpapers2 {
+    background-image: url('../image/archlinux-linux-wallpapers1.jpg');
+}
+.wallpapers3 {
+    background-image: url('../image/archlinux2.jpg');
+}
