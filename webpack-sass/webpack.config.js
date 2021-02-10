@@ -6,8 +6,8 @@ module.exports = {
         pedido: './src/pedido.js'
     },
     output: {
-        filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist/assets/js')
+        filename: 'assets/js/[name].bundle.js',
+        path: path.resolve(__dirname, 'dist')
     },
     mode: 'production',
     module: {
@@ -21,7 +21,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: '../images/[name].[ext]'
+                        name: 'assets/images/[name].[ext]'
                     }
                 }]
             },
