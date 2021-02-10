@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'script.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist/assets/js')
     },
     mode: 'production',
     module: {
@@ -15,7 +15,12 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
-                use: ['file-loader']
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '../images/[name].[ext]'
+                    }
+                }]
             },
             {
                 test: /\.scss$/, use:['style-loader', 'css-loader', 'sass-loader']

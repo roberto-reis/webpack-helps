@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import './css/teste.scss';
+import bitcoin from './images/bitcoin.jpg';
 import Botao from './componentes/botao/index.js';
 
 
